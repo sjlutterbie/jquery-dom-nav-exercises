@@ -15,9 +15,15 @@ function eventHandler() {
         
     });
     
-            //shopping-item__checked
-    
     // Permanently remove items from the list
+    
+    $('ul.shopping-list').on('click', '.shopping-item-delete', function(event){
+
+        // Navigate to parent li element, remove.
+        
+        $(this).parents('li').remove();
+        
+    });
     
 }
 
